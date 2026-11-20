@@ -45,6 +45,9 @@ class Landin < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/refine version")
+    # refine finds its split commands in libexec/landin through its own
+    # resolved path, which Homebrew does not link into the prefix.
+    assert_match "usage: refine svd", shell_output("#{bin}/refine svd --help")
     (testpath/"main.ldn").write <<~LANDIN
       import core/io
       import hosted/blocking
