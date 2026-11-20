@@ -12,19 +12,19 @@ class Landin < Formula
     depends_on arch: :arm64
 
     on_arm do
-      url "https://github.com/701-dev/Landin/releases/download/v0.2.10/landin-0.2.10-aarch64-darwin.tar.gz"
-      sha256 "cad6d5264e61124f9ea4da85b3a3a4a25c7ea6af53655ac0ad3a867ed4c313e9"
+      url "https://github.com/701-dev/Landin/releases/download/v0.2.11/landin-0.2.11-aarch64-darwin.tar.gz"
+      sha256 "b4c121ca536fc2237b1da2ced7c63aaeaf0b1fa882456546272011693b906880"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/701-dev/Landin/releases/download/v0.2.10/landin-0.2.10-aarch64-linux.tar.gz"
-      sha256 "e1acba936b36772cafd16d53f646f51264f9c3673e00553f8c44f9a237edb3ca"
+      url "https://github.com/701-dev/Landin/releases/download/v0.2.11/landin-0.2.11-aarch64-linux.tar.gz"
+      sha256 "1619ab42b19c226d2f1d62bf2314432863452d42035f71689b638b848f85ba06"
     end
     on_intel do
-      url "https://github.com/701-dev/Landin/releases/download/v0.2.10/landin-0.2.10-x86_64-linux.tar.gz"
-      sha256 "525374ce73d7bfea553be1456f27f1421fbe4f605401e33597afaf0f5675f48f"
+      url "https://github.com/701-dev/Landin/releases/download/v0.2.11/landin-0.2.11-x86_64-linux.tar.gz"
+      sha256 "a0e546c97f11b0c47f643ba5a3610808c9a514dfe19e48b91bcd5d8f9da53451"
     end
   end
 
