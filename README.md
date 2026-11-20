@@ -1,6 +1,6 @@
 # Homebrew tap
 
-Homebrew casks by JanHaan.
+Homebrew casks and formulae by JanHaan.
 
 ## ICA Viewer
 
@@ -29,3 +29,20 @@ The cask installs the signed and notarized disk image from the project's
 Keychain after an uninstall; use **Forget All Saved Credentials** in the app's **Settings** to remove them first.
 
 Not affiliated with Citrix. Citrix and ICA are trademarks of Cloud Software Group, Inc.
+
+## Landin
+
+[Landin](https://www.701.dev/) is a systems programming language. The formula installs its compiler, `refine`, with
+the standard library, from the project's [GitHub releases](https://github.com/701-dev/Landin/releases).
+
+```sh
+brew install janhaan/tap/landin   # install
+brew upgrade landin               # update
+brew uninstall landin             # remove
+```
+
+It runs on a Mac with Apple Silicon and on Linux, x86-64 and arm64. On macOS `refine` links programs through the
+Xcode command-line tools, on Linux through the system's GCC driver. `refine version` names the release and the
+directory the library is read from.
+
+The formula follows the releases by itself: a daily workflow points it at the newest one.
