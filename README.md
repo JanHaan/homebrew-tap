@@ -32,17 +32,19 @@ Not affiliated with Citrix. Citrix and ICA are trademarks of Cloud Software Grou
 
 ## Landin
 
-[Landin](https://www.701.dev/) is a systems programming language. The formula installs its compiler, `refine`, with
-the standard library, from the project's [GitHub releases](https://github.com/701-dev/Landin/releases).
+Landin's formula moved to [701-dev/homebrew-tap](https://github.com/701-dev/homebrew-tap):
 
 ```sh
-brew install janhaan/tap/landin   # install
-brew upgrade landin               # update
-brew uninstall landin             # remove
+brew install 701-dev/tap/landin
 ```
 
-It runs on a Mac with Apple Silicon and on Linux, x86-64 and arm64. On macOS `refine` links programs through the
-Xcode command-line tools, on Linux through the system's GCC driver. `refine version` names the release and the
-directory the library is read from.
+`tap_migrations.json` points `landin` there. Homebrew 7 taps only trusted taps for a migration, so for an install
+from this tap the next `brew update` prints the commands that finish the move:
 
-The formula follows the releases by itself: a daily workflow points it at the newest one.
+```sh
+brew tap 701-dev/tap
+brew trust 701-dev/tap/landin
+brew reinstall landin
+```
+
+After `brew trust 701-dev/tap`, `brew update` moves it by itself and `brew upgrade` follows the new tap.
