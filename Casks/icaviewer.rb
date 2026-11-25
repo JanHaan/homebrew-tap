@@ -1,6 +1,6 @@
 cask "icaviewer" do
-  version "0.11.3"
-  sha256 "ab81442635f6b01f10ea31e31b1fac5e00fca8f24285439c110ce9aeb0c31608"
+  version "0.11.4"
+  sha256 "1432ade5625abb4af8bb1aa7ae637351f81a45c0496a9e190c306c5afb3e3c7c"
 
   url "https://github.com/JanHaan/swift-ica-client/releases/download/v#{version}/swift-ica-client-#{version}.dmg"
   name "ICA Viewer"
